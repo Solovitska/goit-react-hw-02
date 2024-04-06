@@ -1,0 +1,19 @@
+.wrapper {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.buttons {
+    border: none;
+    background-color: #0beabde2;
+    transition: background-color 250ms ease-in-out;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.buttons:hover {
+    background-color: #069fa2a3;
+}

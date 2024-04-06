@@ -1,0 +1,14 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.feedbackList {
+    list-style: none;
+}
+
+.text {
+    font-size: 16px;
+    font-weight: 500;
+}
