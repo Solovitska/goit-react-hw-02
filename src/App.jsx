@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react";
 import "./App.css";
 import Description from "./components/Description/Description.jsx";
@@ -30,6 +31,7 @@ function App() {
 
   const totalFeedback = feedback.good + feedback.neutral + feedback.bad;
   const notBadFeedback = feedback.good + feedback.neutral;
+  const positivePercentage = totalFeedback > 0 ? Math.round((notBadFeedback / totalFeedback) * 100) : 0;
 
   const resetFeedback = () => {
     setFeedback(baseState);
@@ -47,7 +49,7 @@ function App() {
         <Feedback
           feedback={feedback}
           totalFeedback={totalFeedback}
-          notBadFeedback={notBadFeedback}
+          positivePercentage={positivePercentage}
         />
       ) : (
         <Notification />
